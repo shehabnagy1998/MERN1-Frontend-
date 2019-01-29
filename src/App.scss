@@ -1,2 +1,35 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import 'materialize-css/sass/materialize.scss';
+
+.card {
+
+    .add-card {
+
+        .add-button {
+            margin-top: 30px;
+        }
+    }
+
+    .empty-card {
+        .card-title {
+            font-size: 2rem
+        }
+    }
+
+    .todo-details {
+        .card-title {
+            margin-bottom: 30px;
+        }
+    }
+
+    .add {
+        .card-title {
+            margin-bottom: 30px; 
+        }
+    }
+
+    .card-title {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+}

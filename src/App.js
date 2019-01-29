@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route} from 'react-router-dom'
+import './App.scss'
+import Navbar from './components/navbar/Navbar';
+import Dashboard from './components/dashboard/Dashboard';
+import TodoDetails from './components/todoDetails/TodoDetails';
+import Add from './components/add/Add';
 
 class App extends Component {
 
@@ -18,8 +23,11 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="container">
-          
+        <div>
+          <Navbar />
+          <Route path="/" exact component={Dashboard}/>
+          <Route path="/todo/:id" component={TodoDetails}/>
+          <Route path="/add" component={Add}/>
         </div>
       </BrowserRouter>
     );
